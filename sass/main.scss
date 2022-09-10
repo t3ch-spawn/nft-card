@@ -1,0 +1,68 @@
+@import "abstracts/variables";
+@import "layout/typography";
+@import "layout/nftContainer";
+
+// Font
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  // defines what 1rem is (10px)
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $Very-dark-blue;
+  font-family: "Outfit", sans-serif;
+  padding: 2rem 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: $Very-dark-blue-2;
+  width: 80%;
+  max-width: 38rem;
+  border-radius: $general-border;
+  box-shadow: 0 1.3rem 3rem rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  height: fit-content;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: $Very-dark-blue-3;
+}
+
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+  color: $White;
+}
+.attribution a {
+  color: $White;
+}

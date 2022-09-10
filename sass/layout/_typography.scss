@@ -1,0 +1,66 @@
+.typography {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  height: fit-content;
+
+  // all children except last child have a margin bottom
+  // doing this because of flex gap issue on safari
+  & > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    color: $White;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  & > p {
+    color: $Soft-blue;
+  }
+}
+
+.nft-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  p {
+    display: flex;
+
+    img {
+      margin-right: 5px;
+      height: 100%;
+    }
+  }
+}
+
+.eth-amount {
+  color: $Cyan;
+}
+
+.time-left {
+  color: $Soft-blue;
+}
+
+.nft-creator {
+  p {
+    text-align: center;
+    color: $Soft-blue;
+  }
+
+  span {
+    color: $White;
+  }
+
+  span:hover {
+    color: $Cyan;
+    cursor: pointer;
+  }
+}
