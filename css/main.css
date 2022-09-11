@@ -30,6 +30,7 @@
 }
 .nft-details p {
   display: flex;
+  align-items: center;
 }
 .nft-details p img {
   margin-right: 5px;
@@ -44,8 +45,18 @@
   color: hsl(215deg, 51%, 70%);
 }
 
+.nft-creator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.nft-creator img {
+  margin-right: 1.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 1.8px solid hsl(0deg, 0%, 100%);
+}
 .nft-creator p {
-  text-align: center;
   color: hsl(215deg, 51%, 70%);
 }
 .nft-creator span {
@@ -54,6 +65,16 @@
 .nft-creator span:hover {
   color: rgb(0, 255, 247);
   cursor: pointer;
+}
+
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(0deg, 0%, 100%);
 }
 
 .nft-container {
@@ -65,6 +86,7 @@
 
 .nft {
   position: relative;
+  max-height: 323.13px;
 }
 
 .nft-equilibrium {
@@ -81,15 +103,14 @@
   left: 0;
   transition: 0.3s ease-out;
   border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .eye-icon {
-  position: absolute;
   height: 4.5rem;
   width: 4.5rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   opacity: 0;
   pointer-events: none;
   transition: 0.3s ease-out;
@@ -125,7 +146,7 @@ body {
   height: 100vh;
   background-color: hsl(217deg, 54%, 11%);
   font-family: "Outfit", sans-serif;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 main {
@@ -133,6 +154,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
 
 .container {
@@ -160,12 +182,27 @@ hr {
   background-color: hsl(215deg, 32%, 27%);
 }
 
-.attribution {
-  font-size: 1.6rem;
-  text-align: center;
-  color: hsl(0deg, 0%, 100%);
-}
-
-.attribution a {
-  color: hsl(0deg, 0%, 100%);
+@media screen and (max-width: 405px) {
+  .container {
+    padding: 1.5rem;
+  }
+  .eye-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .typography h2 {
+    font-size: 1.5rem;
+  }
+  .typography p {
+    font-size: 1.2rem;
+  }
+  .nft-details img {
+    height: 70%;
+  }
+  .nft-creator img {
+    height: 2.8rem;
+  }
+  .attribution {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=main.css.map */

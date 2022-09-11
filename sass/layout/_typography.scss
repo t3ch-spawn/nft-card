@@ -33,6 +33,7 @@
 
   p {
     display: flex;
+    align-items: center;
 
     img {
       margin-right: 5px;
@@ -50,8 +51,18 @@
 }
 
 .nft-creator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  img {
+    margin-right: 1.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 1.8px solid $White;
+  }
+
   p {
-    text-align: center;
     color: $Soft-blue;
   }
 
@@ -63,4 +74,13 @@
     color: $Cyan;
     cursor: pointer;
   }
+}
+
+.attribution {
+  font-size: 1.6rem;
+  text-align: center;
+  color: $White;
+}
+.attribution a {
+  color: $White;
 }
